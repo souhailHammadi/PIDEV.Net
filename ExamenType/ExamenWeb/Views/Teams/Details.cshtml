@@ -1,0 +1,67 @@
+﻿@model Domaine.Team
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutCustom.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Team</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <!--<dt>
+            @Html.DisplayNameFor(model => model.adminEnt.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adminEnt.team.rHmanagerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prManager.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prManager.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rHmanager.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rHmanager.name)
+        </dd>-->
+
+        <dt>
+            @Html.DisplayNameFor(model => model.prManagerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.prManagerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rHmanagerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rHmanagerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adminEntId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adminEntId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.teamId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
